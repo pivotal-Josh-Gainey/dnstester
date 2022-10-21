@@ -1,0 +1,9 @@
+applications:
+- name: dnstester
+  memory: 1G
+  instances: 1
+  buildpack: java_buildpack_offline
+  random-route: true
+  path: target/dnstester-0.0.1-SNAPSHOT.jar
+  env:
+    URI: grafana.pks-36.slot-34.tanzu-gss-labs.vmware.com
